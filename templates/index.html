@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="/static/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/static/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="/static/assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="/static/assets/css/loader.css">
+</head>
+
+<body id="page-top">
+<div class="loader-wrapper">
+    <div class="loader" style="width:25rem;">
+        <img src="/static/assets/img/analysis.gif" class="img-fluid"/>
+    </div>
+</div>
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+    <div class="container"><a class="navbar-brand" href="#page-top">Regressors</a>
+        <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right"
+                type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="nav navbar-nav ml-auto text-uppercase">
+                <li class="nav-item" role="presentation"></li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#portfolio">ALGORITHMS</a>
+                </li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                                                            href="#about">METHODOLoGY</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#team">Team</a>
+                </li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                                                            href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header class="masthead"
+        style="background-image: url(&quot;/static/assets/img/header-bg.jpg&quot;);background-position: top;">
+    <div class="container">
+        <div class="intro-text" style="height: 100vh !important;">
+            <div class="intro-lead-in"><span class="d-none">Welcome To Our Website!</span></div>
+            <div class="intro-heading text-uppercase"><span>Ready for some analysis ???</span></div>
+            <a class="btn btn-xl text-uppercase js-scroll-trigger p-1" role="button" href="#services"
+               style="background-color: transparent;"><i
+                    class="fas fa-angle-double-down flash animated infinite text-white" style="font-size: 3em;"></i></a>
+        </div>
+    </div>
+</header>
+<section id="portfolio" style="background-color: rgba(0,0,0,0.1);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-uppercase section-heading">ALGORITHMS</h2>
+                <h3 class="section-subheading text-muted">Some informative insights on different machine learning algorithms</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <div class="h-100">
+                    <a class="portfolio-link" href="{{url_for('linear')}}">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="/static/assets/img/lin2.gif" style="height:263px;"></a>
+                    <div class="portfolio-caption" style="height:80px;">
+                        <!--                            <a href="{{url_for('linear')}}"></a>-->
+                        <h4></h4>
+                        <h4>Linear Regression<br><br></h4>
+                        <h4></h4>
+                        <h4></h4>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <a class="portfolio-link" href="{{url_for('polynomial')}}">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="/static/assets/img/blogs/p1.gif"></a>
+                <div class="portfolio-caption">
+                    <h4>Polynomial Regression</h4>
+                    <p class="text-muted"></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <a class="portfolio-link" href="{{url_for('stepwise')}}">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="/static/assets/img/stepwise.gif"></a>
+                <div class="portfolio-caption">
+                    <h4>Stepwise Regression</h4>
+                    <p class="text-muted"></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <a class="portfolio-link" href="{{url_for('ridge')}}">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="/static/assets/img/ridge1.gif" style="height:263px width:350p !important;"></a>
+                <div class="portfolio-caption">
+                    <h4>Ridge Regression&nbsp;</h4>
+                    <p class="text-muted"></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <a class="portfolio-link" href="{{url_for('lasso')}}">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="/static/assets/img/lasso.gif" style="height:260px;"></a>
+                <div class="portfolio-caption">
+                    <h4>Lasso Regression</h4>
+                    <p class="text-muted"></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <a class="portfolio-link"  href="{{url_for('elastic')}}">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="/static/assets/img/elastic1.gif" style="height:260px;"></a>
+                <div class="portfolio-caption">
+                    <h4>ElasticNet Regression</h4>
+                    <p class="text-muted"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about" style="background-color: #d3d3d32b;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-uppercase">METHODOLOGY TO ANALYSE YOUR DATASET</h2>
+                <h3 class="text-muted section-subheading">The steps are given below.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="list-group timeline">
+                    <li class="list-group-item">
+                        <div data-aos="fade-up" data-aos-delay="1500" data-aos-once="true" class="timeline-image"><img
+                                class="rounded-circle img-fluid" src="/static/assets/img/about/cleaning.jfif" style="height:156px;width:156px;"></div>
+                        <div data-aos="slide-right" data-aos-duration="1500" data-aos-once="true"
+                             class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>STEP 1</h4>
+                                <h4 class="subheading">DATA CLEANING</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted" data-aos="fade" data-aos-delay="1500" data-aos-once="true" style="text-align:justify;">We try and prepare data for analysis by removing or modifying data that is incorrect, incomplete, irrelevant, duplicated, or improperly formatted. This data is usually not necessary or helpful when it comes to analyzing data because it may hinder the process or provide inaccurate results. There are several methods for cleaning data depending on how it is stored along with the answers being sought.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item timeline-inverted">
+                        <div data-aos="fade-up" data-aos-delay="1500" data-aos-once="true" class="timeline-image"><img
+                                class="rounded-circle img-fluid" src="/static/assets/img/about/exploration.jpg" style="height:156px;width:156px;"></div>
+                        <div data-aos="slide-left" data-aos-duration="1500" data-aos-once="true" class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>STEP 2<br></h4>
+                                <h4><strong>EXPLORATORY DATA ANALYSIS</strong><br></h4>
+                                <h4 class="subheading"></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted" data-aos="fade" data-aos-duration="1500" data-aos-delay="1500"
+                                   data-aos-once="true" style="text-align:justify;">In this step we perform initial investigation on data so as to discover patterns to test hypothesis and to check assumptions with the help of summary statistics and graphical representations. It is a good practice to understand the data first and try to gather as many insights from it. EDA is all about making sense of data in hand, before getting them dirty with it.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div data-aos="fade-up" data-aos-delay="1500" data-aos-once="true" class="timeline-image"><img
+                                class="rounded-circle img-fluid" src="/static/assets/img/about/preparation.jpg"style="height:156px;width:156px;"></div>
+                        <div data-aos="slide-right" data-aos-duration="1500" data-aos-once="true"
+                             class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>STEP 3</h4>
+                                <h4>DATA PREPARATION</h4>
+                                <h4 class="subheading"></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p data-aos="fade" data-aos-delay="1500" data-aos-once="true" class="text-muted" style="text-align:justify;">This step involves  process of cleaning and transforming raw data prior to processing and analysis. It is an important step prior to processing and often involves reformatting data, making corrections to data and the combining of data sets to enrich data. Data preparation is often a lengthy undertaking for data professionals or business users, but it is essential as a prerequisite to put data in context in order to turn it into insights and eliminate bias resulting from poor data quality.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item timeline-inverted">
+                        <div data-aos="fade-up" data-aos-delay="1500" data-aos-once="true" class="timeline-image"><img
+                                class="rounded-circle img-fluid" src="/static/assets/img/about/apply.jpg" style="height:156px;width:156px;"></div>
+                        <div data-aos="slide-left" data-aos-duration="1500" data-aos-once="true" class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>STEP 4</h4>
+                                <h4 class="subheading">APPLY MACHINE LEARNING ALGORITHM</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted" data-aos="fade" data-aos-delay="1500" data-aos-once="true" style="text-align:justify;">This is the step where you can expect the magic to happen , we apply different regressors on the prepared dataset (whole automated process) , and then select the algorithm giving the best result so that end user can have  the most optimised result without any fuss of implementing the whole process themselves .</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-lg-flex align-items-lg-start timeline">
+                        <div data-aos="fade-up" data-aos-delay="1500" data-aos-once="true" class="timeline-image"><img
+                                class="rounded-circle img-fluid" src="/static/assets/img/about/testing.png" style="height:156px;width:156px;"></div>
+                        <div data-aos="slide-right" data-aos-duration="1500" data-aos-once="true"
+                             class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="text-right">STEP 5</h4>
+                                <h4 class="text-right subheading">TESTING</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted" data-aos="fade" data-aos-delay="1500" data-aos-once="true" style="text-align:justify;">Software testing will be one of the most critical factors that determine the success of a machine learning system. We give real importance to this step as potentially this is one most important steps that tells us that weather our intuition or application is going in the right direction or not . As from a testing standpoint, the results for a fixed set of input will change as we learn more about the inputs.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item timeline-inverted">
+                        <div class="d-flex justify-content-center align-items-center timeline-image" data-aos="fade-up"
+                             data-aos-delay="1450" data-aos-once="true" style="background-color: rgb(35,58,75);">
+                            <h4 class="d-lg-flex align-content-center justify-content-lg-center align-items-lg-end flash animated infinite m-0">
+                                RESULT</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container d-flex justify-content-center align-items-center p-5"><a class="pl-2 pr-2 pt-1 pb-1"
+                                                                               href="{{url_for('dataset')}}"
+                                                                               style="color: rgb(43,38,24);font-size: 20px;background-color: #bbc3ae;">&nbsp;CLICK
+    HERE TO ANALYSE YOUR DATASET&nbsp;</a></div>
+<section id="team" class="bg-light">
+    <div class="container">
+        <h1 class="text-uppercase text-center mb-5 pb-5">OUR TEAM</h1>
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-4">
+                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/shantanu1.jpg">
+                    <h4>Shantanu Mittal</h4>
+                    <p class="text-muted"></p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/sudarshan.jpeg">
+                    <h4>Sudarshan Sharma</h4>
+                    <p class="text-muted"></p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/prashant.jpeg">
+                    <h4>Prashant Malhotra</h4>
+                    <p class="text-muted"></p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/yash1.jfif">
+                    <h4>Yash Vardhan Srivastava</h4>
+                    <p class="text-muted"></p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/shubhendra.jpg">
+                    <h4>Shubhendra Pandey</h4>
+                    <p class="text-muted"></p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="contact" style="background-image:url('/static/assets/img/map-image.png');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-uppercase section-heading">want to get in touch with us ??</h2>
+                <h3 class="section-subheading text-muted">Please fill the form and we will get in touch with you
+                    soon.!!!</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form id="contactForm" name="contactForm" novalidate="novalidate">
+                    <div class="form-row">
+                        <div class="col col-md-6">
+                            <div class="form-group"><input class="form-control" type="text" id="name"
+                                                           placeholder="Your Name *" required=""><small
+                                    class="form-text text-danger flex-grow-1 help-block lead"></small></div>
+                            <div class="form-group"><input class="form-control" type="email" id="email"
+                                                           placeholder="Your Email *" required=""><small
+                                    class="form-text text-danger help-block lead"></small></div>
+                            <div class="form-group"><input class="form-control" type="tel" placeholder="Your Phone *"
+                                                           required=""><small
+                                    class="form-text text-danger help-block lead"></small></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><textarea class="form-control" id="message"
+                                                              placeholder="Your Message *" required=""></textarea><small
+                                    class="form-text text-danger help-block lead"></small></div>
+                        </div>
+                        <div class="col">
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <div id="success"></div>
+                            <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"><span class="copyright">Copyright&nbsp;© Knerdy_Nights 2020</span></div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                    <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img
+                                    class="img-fluid d-block mx-auto" src="/static/assets/img/portfolio/1-full.jpg">
+                                <p></p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2020</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i
+                                        class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal2">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img
+                                    class="img-fluid d-block mx-auto" src="/static/assets/img/portfolio/2-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae
+                                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i
+                                        class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal3">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img
+                                    class="img-fluid d-block mx-auto" src="/static/assets/img/portfolio/3-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae
+                                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i
+                                        class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal4">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img
+                                    class="img-fluid d-block mx-auto" src="/static/assets/img/portfolio/4-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae
+                                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i
+                                        class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal5">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img
+                                    class="img-fluid d-block mx-auto" src="/static/assets/img/portfolio/5-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae
+                                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i
+                                        class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal6">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img
+                                    class="img-fluid d-block mx-auto" src="/static/assets/img/portfolio/6-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae
+                                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i
+                                        class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/assets/js/jquery.min.js"></script>
+<script src="/static/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/assets/js/bs-init.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="/static/assets/js/agency.js"></script>
+<script src="/static/assets/js/loader.js"></script>
+</body>
+
+</html>
