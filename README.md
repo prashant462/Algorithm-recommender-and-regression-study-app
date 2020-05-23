@@ -22,6 +22,6 @@ new machine learning algorithms</h4>
 <h4>3.Decision tree<h4>
 <h4>4.Support Vector Machine</h4>
 <h4>5.Lasso Regression.</h4>
-<h4>5.Ridge Regression.</h4>
-<h4>5.Elasticnet Regression.</h4>
-<h4>5.Stepwise Regression.</h4>
+<h4>6.Ridge Regression.</h4>
+<h4>6.Elasticnet Regression.</h4>
+<h4>7.Stepwise Regression.</h4>
